@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Order & Checkout</title>
+
+    <link rel="stylesheet" href="order-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="main-container">
+
+    <div class="order-panel">
+
+        <div class="heading">
+
+            <span>Fresh & Delicious</span>
+
+            <h1>Your Order</h1>
+
+            <p>
+                Review your selected dishes before completing your order.
+            </p>
+
+        </div>
+
+        <div class="food-list">
+
+            <div class="food-card">
+
+                <img src="./image/blog1.jpg">
+
+                <div class="food-details">
+
+                    <h3>Classic Breakfast</h3>
+                    <p>Breakfast</p>
+
+                </div>
+
+                <div class="qty">
+
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+
+                </div>
+
+                <h4>$8.99</h4>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="./image/blog2.jpg">
+
+                <div class="food-details">
+
+                    <h3>Grilled Sandwich</h3>
+                    <p>Lunch</p>
+
+                </div>
+
+                <div class="qty">
+
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+
+                </div>
+
+                <h4>$14.98</h4>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="./image/blog3.jpg">
+
+                <div class="food-details">
+
+                    <h3>Chocolate Cake</h3>
+                    <p>Dessert</p>
+
+                </div>
+
+                <div class="qty">
+
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+
+                </div>
+
+                <h4>$5.49</h4>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="./image/insta-4.jpg">
+
+                <div class="food-details">
+
+                    <h3>Special Pizza</h3>
+                    <p>Dinner</p>
+
+                </div>
+
+                <div class="qty">
+
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+
+                </div>
+
+                <h4>$12.99</h4>
+
+            </div>
+
+        </div>
+
+        <div class="coupon">
+
+            <input type="text" placeholder="Coupon Code">
+            <button>Apply</button>
+
+        </div>
+
+        <div class="price-box">
+
+            <div>
+
+                <span>Subtotal</span>
+                <strong>$42.45</strong>
+
+            </div>
+
+            <div>
+
+                <span>Delivery Fee</span>
+                <strong>$2.50</strong>
+
+            </div>
+
+            <div>
+
+                <span>Tax</span>
+                <strong>$3.10</strong>
+
+            </div>
+
+            <div class="grand-total">
+
+                <span>Total</span>
+                <strong>$48.05</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="checkout-panel">
+
+        <div class="checkout-card">
+
+            <span class="small-title">
+                Checkout
+            </span>
+
+            <h2>
+                Complete Your Order
+            </h2>
+
+            <form>
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                    type="text"
+                    placeholder="Enter your full name">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Phone Number</label>
+
+                    <input
+                    type="tel"
+                    placeholder="Phone Number">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Address</label>
+
+                    <textarea
+                    rows="3"
+                    placeholder="Delivery Address"></textarea>
+
+                </div>
+
+                <div class="double-input">
+
+                    <div class="input-group">
+
+                        <label>City</label>
+
+                        <input
+                        type="text"
+                        placeholder="City">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Zip Code</label>
+
+                        <input
+                        type="text"
+                        placeholder="Zip">
+
+                    </div>
+
+                </div>
+
+                <h3 class="payment-heading">
+                    Payment Method
+                </h3>
+
+                <div class="payment-method">
+
+                    <label>
+
+                        <input type="radio" name="pay" checked>
+
+                        <span>
+                            <i class="fa-solid fa-credit-card"></i>
+                            Card
+                        </span>
+
+                    </label>
+
+                    <label>
+
+                        <input type="radio" name="pay">
+
+                        <span>
+                            <i class="fa-brands fa-google-pay"></i>
+                            UPI
+                        </span>
+
+                    </label>
+
+                    <label>
+
+                        <input type="radio" name="pay">
+
+                        <span>
+                            <i class="fa-solid fa-wallet"></i>
+                            Wallet
+                        </span>
+
+                    </label>
+
+                    <label>
+
+                        <input type="radio" name="pay">
+
+                        <span>
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            Cash
+                        </span>
+
+                    </label>
+
+                </div>
+
+                <div class="checkout-summary">
+
+                    <div class="summary-row">
+
+                        <span>Items</span>
+                        <strong>4</strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>Subtotal</span>
+                        <strong>$42.45</strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>Delivery</span>
+                        <strong>$2.50</strong>
+
+                    </div>
+
+                    <div class="summary-row total-row">
+
+                        <span>Total</span>
+                        <strong>$48.05</strong>
+
+                    </div>
+
+                </div>
+
+                <a href="web.html" class="place-order">
+                    Place Order
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <p class="secure">
+
+                    <i class="fa-solid fa-lock"></i>
+                    Secure Payment • SSL Protected
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>

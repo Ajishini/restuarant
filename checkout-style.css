@@ -1,0 +1,575 @@
+/*==============================
+  GOOGLE RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+}
+
+/*==============================
+ BACKGROUND
+==============================*/
+
+.checkout-section{
+
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.75)),
+    url("./image/checkout-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding:60px 8%;
+}
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.15);
+}
+
+/*==============================
+ GLASS CARD
+==============================*/
+
+.checkout-card{
+
+    position:relative;
+    z-index:2;
+
+    width:520px;
+
+    padding:45px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45);
+
+    animation:cardShow 1s ease;
+}
+
+/*==============================
+ TITLES
+==============================*/
+
+.subtitle{
+
+    display:block;
+
+    text-align:center;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:48px;
+
+    color:#d8a64a;
+
+    margin-bottom:5px;
+
+    animation:fadeDown .8s ease;
+}
+
+.checkout-card h1{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    animation:fadeDown 1s ease;
+}
+
+/*==============================
+ FORM
+==============================*/
+
+.input-box{
+
+    margin-bottom:18px;
+
+    animation:fadeUp .8s ease;
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:500;
+}
+
+.input-field{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:12px;
+
+    padding:0 16px;
+
+    transition:.35s;
+}
+
+.input-field i{
+
+    color:#d8a64a;
+
+    font-size:16px;
+}
+
+.input-field input,
+.input-field textarea{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#fff;
+
+    padding:16px 0;
+
+    font-size:15px;
+
+    resize:none;
+}
+
+.input-field input::placeholder,
+.input-field textarea::placeholder{
+
+    color:#ddd;
+}
+
+.input-field:focus-within{
+
+    border-color:#d8a64a;
+
+    box-shadow:
+    0 0 15px rgba(216,166,74,.45);
+
+    transform:translateY(-2px);
+}
+
+/*==============================
+ ROW
+==============================*/
+
+.row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+}
+
+/*==============================
+ PAYMENT
+==============================*/
+
+.payment-title{
+
+    margin:25px 0 18px;
+
+    color:white;
+
+    font-size:22px;
+}
+
+.payment-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+}
+
+.payment-grid label{
+
+    cursor:pointer;
+}
+
+.payment-grid input{
+
+    display:none;
+}
+
+.payment-grid span{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:white;
+
+    transition:.35s;
+}
+
+.payment-grid span i{
+
+    color:#d8a64a;
+}
+
+.payment-grid input:checked+span{
+
+    background:#d8a64a;
+
+    color:white;
+
+    transform:scale(1.04);
+
+    box-shadow:0 10px 20px rgba(216,166,74,.35);
+}
+
+.payment-grid input:checked+span i{
+
+    color:white;
+}
+
+/*==============================
+ SUMMARY
+==============================*/
+
+.summary{
+
+    margin-top:28px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding-top:20px;
+}
+
+.summary div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:white;
+
+    margin-bottom:12px;
+}
+
+.total{
+
+    margin-top:10px;
+
+    font-size:20px;
+
+    color:#d8a64a;
+
+    font-weight:600;
+}
+
+/*==============================
+ BUTTON
+==============================*/
+
+button{
+
+    width:100%;
+
+    height:58px;
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#d8a64a;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.35s;
+}
+
+button i{
+
+    margin-left:10px;
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(216,166,74,.45);
+}
+
+button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.35);
+
+    transform:skewX(-25deg);
+
+    transition:1s;
+}
+
+button:hover::before{
+
+    left:150%;
+}
+
+/*==============================
+ SECURE
+==============================*/
+
+.secure{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    color:#ddd;
+
+    font-size:14px;
+}
+
+.secure i{
+
+    color:#6fdc6f;
+
+    margin-right:6px;
+}
+
+/*==============================
+ ANIMATIONS
+==============================*/
+
+@keyframes cardShow{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(120px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+
+}
+
+/* Floating animation */
+
+.checkout-card{
+
+    animation:
+    cardShow .8s ease,
+    floating 5s ease-in-out infinite;
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+    }
+
+    100%{
+
+        transform:translateY(0);
+    }
+
+}
+
+/*==============================
+ RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+.checkout-section{
+
+    justify-content:center;
+
+    padding:30px;
+}
+
+.checkout-card{
+
+    width:100%;
+
+    max-width:520px;
+}
+
+}
+
+@media(max-width:600px){
+
+html,
+body{
+
+    overflow:auto;
+}
+
+.checkout-section{
+
+    height:auto;
+
+    min-height:100vh;
+
+    padding:25px 15px;
+}
+
+.checkout-card{
+
+    padding:30px 22px;
+}
+
+.checkout-card h1{
+
+    font-size:28px;
+}
+
+.subtitle{
+
+    font-size:40px;
+}
+
+.row{
+
+    grid-template-columns:1fr;
+}
+
+.payment-grid{
+
+    grid-template-columns:1fr;
+}
+
+button{
+
+    height:54px;
+}
+
+}

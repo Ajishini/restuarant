@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Checkout</title>
+
+    <link rel="stylesheet" href="checkout-style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="checkout-section">
+
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Checkout Card -->
+
+    <div class="checkout-card">
+
+        <span class="subtitle">
+            Checkout
+        </span>
+
+        <h1>
+            Complete Your Order
+        </h1>
+
+        <form>
+
+            <!-- Name -->
+
+            <div class="input-box">
+
+                <label>Full Name</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input type="text"
+                    placeholder="Enter your name"
+                    required>
+
+                </div>
+
+            </div>
+
+            <!-- Phone -->
+
+            <div class="input-box">
+
+                <label>Phone Number</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <input type="tel"
+                    placeholder="Enter phone number"
+                    required>
+
+                </div>
+
+            </div>
+
+            <!-- Address -->
+
+            <div class="input-box">
+
+                <label>Delivery Address</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <textarea
+                    rows="3"
+                    placeholder="Enter your address"
+                    required></textarea>
+
+                </div>
+
+            </div>
+
+            <!-- Two Column -->
+
+            <div class="row">
+
+                <div class="input-box">
+
+                    <label>City</label>
+
+                    <div class="input-field">
+
+                        <i class="fa-solid fa-city"></i>
+
+                        <input type="text"
+                        placeholder="City">
+
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Zip Code</label>
+
+                    <div class="input-field">
+
+                        <i class="fa-solid fa-map-pin"></i>
+
+                        <input type="text"
+                        placeholder="Zip">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Payment -->
+
+            <h2 class="payment-title">
+
+                Payment Method
+
+            </h2>
+
+            <div class="payment-grid">
+
+                <label>
+
+                    <input type="radio"
+                    name="pay"
+                    checked>
+
+                    <span>
+
+                        <i class="fa-solid fa-credit-card"></i>
+
+                        Card
+
+                    </span>
+
+                </label>
+
+                <label>
+
+                    <input type="radio"
+                    name="pay">
+
+                    <span>
+
+                        <i class="fa-brands fa-google-pay"></i>
+
+                        UPI
+
+                    </span>
+
+                </label>
+
+                <label>
+
+                    <input type="radio"
+                    name="pay">
+
+                    <span>
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                        Wallet
+
+                    </span>
+
+                </label>
+
+                <label>
+
+                    <input type="radio"
+                    name="pay">
+
+                    <span>
+
+                        <i class="fa-solid fa-money-bill-wave"></i>
+
+                        Cash
+
+                    </span>
+
+                </label>
+
+            </div>
+
+            <!-- Order Summary -->
+
+            <div class="summary">
+
+                <div>
+
+                    <span>Subtotal</span>
+
+                    <strong>$68.00</strong>
+
+                </div>
+
+                <div>
+
+                    <span>Delivery</span>
+
+                    <strong>$5.00</strong>
+
+                </div>
+
+                <div class="total">
+
+                    <span>Total</span>
+
+                    <strong>$73.00</strong>
+
+                </div>
+
+            </div>
+
+            <!-- Button -->
+
+            <button type="submit">
+
+                Place Order
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+            <p class="secure">
+
+                <i class="fa-solid fa-lock"></i>
+
+                Secure Checkout • SSL Protected
+
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+
+</body>
+</html>
